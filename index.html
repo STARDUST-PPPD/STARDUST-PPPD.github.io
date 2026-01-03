@@ -255,7 +255,7 @@
             star.classList.add('star');
             // Random position
             const randomX = Math.random() * headerWidth;  // Random X position within the header width
-            const randomY = Math.random() * headerHeight; // Random Y position within the header height
+            let randomY = Math.random() * headerHeight; // Random Y position within the header height
             if (randomY > headerHeight-20) {
                 randomY = randomY - 20;
             }
