@@ -234,18 +234,15 @@
     </nav>
 
     <div class="content">
-
-
-
-
-
-
-
-
-
-
-
-        
+    <h2>Posters</h2>
+    <h4>Published posters:</h4>
+    <p>Haynes, J.D., Jones, A.P., Champion, R., Otkhmezuri, B., Bell, G., Cane, D., Crunkhorn, R., Silverdale, M., Lilleker, J. & Warren, P.A. (2025, November 15-19). <i>Multisensory Integration in Heading and Scene-Relative Object Motion Estimation</i> [Conference Presentation]. Society for Neuroscience, San Diego, CA, United States. https://www.sfn.org/-/media/SfN/Documents/NEW-SfN/Meetings/Neuroscience-2025/Abstracts-and-Sessions/Abstract-PDFs/SFN25_Abstracts-PDF-Posters_MON_AM_Final.pdf</p>
+    <p>Warren, P.A., Haynes, J.D., Jones, A.P., Champion, R., Crunkhorn, R., Lilleker, J., Silverdale, M., Cane, D., Otkhmezuri, B. & Bell, G. (2025, November 15-19). <i>Compensation for reafferent visual signals in functional neurological disorder subtype PPPD</i> [Conference Presentation]. Society for Neuroscience, San Diego, CA, United States. https://www.sfn.org/-/media/SfN/Documents/NEW-SfN/Meetings/Neuroscience-2025/Abstracts-and-Sessions/Abstract-PDFs/SFN25_Abstracts-PDF-Posters_SUN_PM_Final.pdf</p>
+    <p>Haynes, J.D., Silverdale, M., Lilleker, J., Cane, D., Crunkhorn, R., Carson, A. & Warren, P.A. (2024, August 25-29). <i>Optic flow parsing in Persistent Postural Perceptual Dizziness (PPPD) - a pilot study</i> [Conference Presentation]. European Conference on Visual Perception, Aberdeen, United Kingdom. https://ecvp2024.abdn.ac.uk/wp-content/uploads/sites/23/2024/08/ECVP2024_Abstract_Book.pdf</p>
+    <p>Warren, P.A., Dickinson, C., Parry, N., Otkhmezuri, B., Bell, G. & Haynes, J.D. (2024, August 25-29). <i>Comparing functional performance effects of VR-simulated static and dynamic visual disturbances</i> [Conference Presentation]. European Conference on Visual Perception, Aberdeen, United Kingdom. https://ecvp2024.abdn.ac.uk/wp-content/uploads/sites/23/2024/08/ECVP2024_Abstract_Book.pdf</p>
+    <h4>Unpublished Posters:</h4>
+    <p>Haynes, J.D., Jones, A.P., Champion, R., Otkhmezuri, B., Bell, G., Cane, D., Crunkhorn, R., Silverdale, M., Lilleker, J. & Warren, P.A. <i>Sensory Cue Integration Differences For Heading vs. Scene-Relative Movement Tasks</i></p>
+    <p>Haynes, J.D., Otkhmezuri, B., Bell, G., Silverdale, M., Lilleker, J., Cane, D., Crunkhorn, R., Carson, A., Champion, R. & Warren, P.A. <i>Visuo-Vestibular Integration in Healthy Controls: Pilot Data for an Investigation into Motion Perception of PPPD Patients</i></p>
     </div>
 
     <footer>
@@ -265,8 +262,8 @@
             star.classList.add('star');
             // Random position
             const randomX = Math.random() * headerWidth;  // Random X position within the header width
-            const randomY = Math.random() * headerHeight; // Random Y position within the header height
-            if (randomY > headerHeight-20); randomY=randomY-20;
+            let randomY = Math.random() * headerHeight; // Random Y position within the header height
+            randomY = randomY - 10;
             // Set random positions for each star
             star.style.left = `${randomX}px`;
             star.style.top = `${randomY}px`;

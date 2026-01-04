@@ -234,18 +234,9 @@
     </nav>
 
     <div class="content">
-
-
-
-
-
-
-
-
-
-
-
-        
+        <h4>Talks</h4>
+        <p>Dr Joshua Haynes talked on Evidence for differences in the processing underlying scene-relative object movement and heading estimation at the Applied Vision Association Spring meeting 2025</p>
+        <p>Dr Joshua Haynes talked on An Overview and Preliminary Results from STARDUST (STudy to Assess and Reduce Dizziness in 3PD Using Sensory Theory) at the Manchester Vision Network meeting 2025 and won the best talk award at the meeting</p>
     </div>
 
     <footer>
@@ -265,8 +256,8 @@
             star.classList.add('star');
             // Random position
             const randomX = Math.random() * headerWidth;  // Random X position within the header width
-            const randomY = Math.random() * headerHeight; // Random Y position within the header height
-            if (randomY > headerHeight-20); randomY=randomY-20;
+            let randomY = Math.random() * headerHeight; // Random Y position within the header height
+            randomY = randomY - 10;
             // Set random positions for each star
             star.style.left = `${randomX}px`;
             star.style.top = `${randomY}px`;

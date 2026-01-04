@@ -234,18 +234,8 @@
     </nav>
 
     <div class="content">
-
-
-
-
-
-
-
-
-
-
-
-
+        <h2>Who to Contact</h2>
+        <p>For general inquiries, please contact the project lead, Dr Paul Warren at paul.warren@manchester.ac.uk, or Dr Joshua Haynes at joshua.haynes@manchester.ac.uk</p>
     </div>
 
     <footer>
@@ -256,7 +246,7 @@
     // Function to generate random positions for stars
     function createRandomStars() {
         const starsContainer = document.querySelector('.stars-container');
-        const numStars = 50;  // Number of stars you want to add
+        const numStars = 55;  // Number of stars you want to add
         const headerWidth = document.querySelector('header').offsetWidth;
         const headerHeight = document.querySelector('header').offsetHeight;
         starsContainer.innerHTML = '';
@@ -265,8 +255,8 @@
             star.classList.add('star');
             // Random position
             const randomX = Math.random() * headerWidth;  // Random X position within the header width
-            const randomY = Math.random() * headerHeight; // Random Y position within the header height
-            if (randomY > headerHeight-20); randomY=randomY-20;
+            let randomY = Math.random() * headerHeight; // Random Y position within the header height
+            randomY = randomY - 10;
             // Set random positions for each star
             star.style.left = `${randomX}px`;
             star.style.top = `${randomY}px`;
