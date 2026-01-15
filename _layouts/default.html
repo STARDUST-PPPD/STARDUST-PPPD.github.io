@@ -284,14 +284,14 @@
         const starsContainer = document.querySelector('.stars-container');
         const numStars = 35;  // Number of stars you want to add
         const navbarWidth = document.querySelector('nav').offsetWidth;
-        const navbarHeight = document.querySelector('nav').offsetTop;
+        const navbarTop = document.querySelector('nav').offsetTop;
         starsContainer.innerHTML = '';
         for (let i = 0; i < numStars; i++) {
             const star = document.createElement('div');
             star.classList.add('star');
             // Random position
             const randomX = Math.random() * navbarWidth;  // Random X position from 0 to navbar width
-            const randomY = Math.random() * navbarHeight; // Random Y position from 0 to navbar location
+            const randomY = Math.random() * (navbarTop-30); // Random Y position from 0 to navbar top location
             // Set random positions for each star
             star.style.left = `${randomX}px`;
             star.style.top = `${randomY}px`;
