@@ -283,15 +283,15 @@
     function createRandomStars() {
         const starsContainer = document.querySelector('.stars-container');
         const numStars = 35;  // Number of stars you want to add
-        const headerWidth = document.querySelector('header').offsetWidth;
-        const headerHeight = document.querySelector('header').offsetHeight;
+        const navbarWidth = document.querySelector('nav').offsetWidth;
+        const navbarHeight = document.querySelector('nav').offsetTop;
         starsContainer.innerHTML = '';
         for (let i = 0; i < numStars; i++) {
             const star = document.createElement('div');
             star.classList.add('star');
             // Random position
-            const randomX = Math.random() * headerWidth;  // Random X position within the header width
-            const randomY = Math.random() * (headerHeight-30); // Random Y position within the header height
+            const randomX = Math.random() * navbarWidth;  // Random X position from 0 to navbar width
+            const randomY = Math.random() * navbarHeight; // Random Y position from 0 to navbar location
             // Set random positions for each star
             star.style.left = `${randomX}px`;
             star.style.top = `${randomY}px`;
